@@ -113,6 +113,9 @@ var bakery=["cake","applepie","cookie","chips","patties"];
     }
 
 
+
+    
+
 do
 {
 var pass=prompt("Enter a password:\nyour password must have more then 6 characters","e.g abc123##");
@@ -166,13 +169,21 @@ if(check1==true && check2==true)
 }
 }while(check1==false || check2==false);
 
+
+
+
 var uni="University of karachi";
 var arr1=uni.split(", ");
 document.write(arr1);
 
 
+
+
+
 var country="pakistan";
 document.write("country name: "+country+"<br>Last Alphabet: "+country[country.length-1]);
+
+
 
 
 var str="The quick brown fox jumps over The lazy dog";

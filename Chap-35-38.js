@@ -128,6 +128,48 @@ reverseString(str);
 
 
 
+function accurence(str,find){
+    var num=0;
+    for(i=0;i<=str.length;i++)
+    {
+        if(str[i]===find)
+        {
+            num++;
+        }
+    }
+    return num;
+}
+var str="JSResourceS.com";
+var find="o";
+alert("Occurence of o in JSResourceS.com: "+accurence(str,find));
+
+
+
+
+
+var org="Web Development Tutorial";
+var n=org.search("Development");
+alert("Development is find in 'Web Development Tutorial' At Index: "+n);
+
+
+
+
+
+function sentenceCase (str) {
+    if ((str===null) || (str===''))
+         return false;
+    else
+     str = str.toString();
+  
+   return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+}
+var name="the quick brown fox";
+alert(sentenceCase(name));
+
+
+
+
+
 function area(radius){
     var area=(Math.PI)*(radius*radius);
     return area;
